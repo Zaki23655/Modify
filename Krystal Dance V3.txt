@@ -1058,6 +1058,19 @@ elseif k == "comma" then
         stopanim()
 
     end
+elseif k == "dot" then 
+    if dancing == false then 
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/drill memphis (joehdah preset).mp3")
+        timeposcur = sound69.TimePosition 
+        sound69:Play()
+        playanim(4842017973)
+    else
+        stopanim()
+
+    end
         end 
 end
 if k == "equals" then 
