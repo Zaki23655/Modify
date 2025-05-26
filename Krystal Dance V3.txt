@@ -1039,11 +1039,14 @@ elseif k == "comma" then
         task.wait(.005)
         sound69.SoundId = customasset("Dances/2)RAXAT - Memphis Cult, KYD EDITS, $ B, SPLYXER.mp3")
         timeposcur = sound69.TimePosition 
-sound69:Play()
+        sound69:Play()
         playanim(14669690919)
+        if currentAnimTrack then
+            currentAnimTrack:AdjustSpeed(1.4)
+        end
     else
         stopanim()
-        
+
     end
         end 
 end
