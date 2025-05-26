@@ -1040,7 +1040,7 @@ elseif k == "comma" then
         sound69.SoundId = customasset("Dances/2)RAXAT - Memphis Cult, KYD EDITS, $ B, SPLYXER.mp3")
         timeposcur = sound69.TimePosition 
         sound69:Play()
-        playanim(14669690919)
+        playanim(128824806891543)
     else
         stopanim()
 
