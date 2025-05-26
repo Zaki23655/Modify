@@ -1006,7 +1006,7 @@ elseif k == "leftbracket" then
         sound69.SoundId = customasset("Dances/New Song.mp3")
         timeposcur = sound69.TimePosition 
 sound69:Play()
-        playanim(82107534128377)
+        playanim(120552806930091)
     else
         stopanim()
         
