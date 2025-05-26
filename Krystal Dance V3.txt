@@ -985,7 +985,7 @@ sound69:Play()
         stopanim()
         
     end
-elseif k == "[" then 
+elseif k == "leftbracket" then 
     if dancing == false then 
         stopanim()
         dancing = true
