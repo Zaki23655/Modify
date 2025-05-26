@@ -1032,6 +1032,19 @@ sound69:Play()
         stopanim()
         
     end
+elseif k == "rightbracket" then 
+    if dancing == false then 
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/Laidback.mp3")
+        timeposcur = sound69.TimePosition 
+sound69:Play()
+        playanim(131155721688011)
+    else
+        stopanim()
+        
+    end
 elseif k == "comma" then 
     if dancing == false then 
         stopanim()
