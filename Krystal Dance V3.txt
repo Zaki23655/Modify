@@ -1039,16 +1039,11 @@ elseif k == "comma" then
         task.wait(.005)
         sound69.SoundId = customasset("Dances/2)RAXAT - Memphis Cult, KYD EDITS, $ B, SPLYXER.mp3")
         timeposcur = sound69.TimePosition 
-        sound69:Play()
-
-        local anim = Instance.new("Animation")
-        anim.AnimationId = "rbxassetid://14669690919"
-        local track = humanoid:LoadAnimation(anim)
-        track:Play()
-        track:AdjustSpeed(1.4)
+sound69:Play()
+        playanim(14669690919)
     else
         stopanim()
-
+        
     end
         end 
 end
