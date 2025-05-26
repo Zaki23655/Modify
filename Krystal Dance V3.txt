@@ -1058,7 +1058,7 @@ elseif k == "comma" then
         stopanim()
 
     end
-elseif k == "dot" then 
+elseif k == "v" then 
     if dancing == false then 
         stopanim()
         dancing = true
