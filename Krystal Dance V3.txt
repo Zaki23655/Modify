@@ -1041,9 +1041,6 @@ elseif k == "comma" then
         timeposcur = sound69.TimePosition 
         sound69:Play()
         playanim(14669690919)
-        if currentAnimTrack then
-            currentAnimTrack:AdjustSpeed(4)
-        end
     else
         stopanim()
 
