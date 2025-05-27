@@ -1150,7 +1150,7 @@ if k == "m" then
 	Text = "You are on page 2"
 })
     else
-        mode = 3 
+        mode = 2 
     game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Krystal Dance V3";
 	Duration = 5;
