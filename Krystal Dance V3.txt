@@ -1271,6 +1271,7 @@ else
     idle = false 
 end
 end)
+
 local UIS = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 
@@ -1296,7 +1297,8 @@ UIS.InputBegan:Connect(function(input, gameProcessed)
 	if gameProcessed then return end
 
 	local k = input.KeyCode.Name:lower()
-	if k == "leftshift" then
+
+	if k == "leftshift" or k == "shift" then
 		isSprinting = not isSprinting
 		humanoid.WalkSpeed = isSprinting and sprintSpeed or normalSpeed
 
