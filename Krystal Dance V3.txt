@@ -1155,6 +1155,7 @@ if k == "m" then
 	Title = "Krystal Dance V3";
 	Duration = 5;
 	Text = "You are on page 3"
+}}
     end
     end
 end)
