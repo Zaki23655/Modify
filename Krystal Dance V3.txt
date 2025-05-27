@@ -1097,7 +1097,7 @@ sound69:Play()
         stopanim()
         
     end
-elseif k == "1" then 
+elseif k == "v" then 
     if dancing == false then 
         stopanim()
         dancing = true
