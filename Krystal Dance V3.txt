@@ -16,7 +16,7 @@ Global.GelatekReanimateConfig = {
     ["DisableTweaks"] = true,
     
     -- [[ Optimization ]] --
-    ["OptimizeGame"] = false,
+    ["OptimizeGame"] = true,
 
     -- [[ Miscellacious ]] --
     ["LoadLibrary"] = false,
