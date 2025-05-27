@@ -31,8 +31,10 @@ Global.GelatekReanimateConfig = {
     }
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelatekussy/GelatekReanimate/main/Main.lua"))()
+
 if getgenv()["Animator"] == nil then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/xhayper/Animator/main/Source/Main.lua"))()
+
 end
 -- Krystal Dance V3, Made by Hemi (es muy janky)
 if not isfolder("Dances") then 
