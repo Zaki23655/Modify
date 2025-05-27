@@ -1135,7 +1135,7 @@ if k == "equals" then
     end
 end
 if k == "m" then 
-    if mode == 2 then 
+    if mode == 3 then 
     mode = 1 
     game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Krystal Dance V3";
@@ -1150,7 +1150,7 @@ if k == "m" then
 	Text = "You are on page 2"
 })
     else
-        mode = 2 
+        mode = 3 
     game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Krystal Dance V3";
 	Duration = 5;
