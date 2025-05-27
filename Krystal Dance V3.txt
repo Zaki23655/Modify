@@ -1097,8 +1097,9 @@ sound69:Play()
         stopanim()
         
     end
-elseif k == "v" then 
-    if dancing == false then 
+if mode == 3 then
+    if k == "q" then 
+           if dancing == false then 
         stopanim()
         dancing = true
         task.wait(.005)
@@ -1109,7 +1110,7 @@ sound69:Play()
     else
         stopanim()
         
-    end
+           end
         end 
 end
 if k == "equals" then 
@@ -1148,6 +1149,12 @@ if k == "m" then
 	Duration = 5;
 	Text = "You are on page 2"
 })
+    else
+        mode = 3 
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Krystal Dance V3";
+	Duration = 5;
+	Text = "You are on page 3"
     end
     end
 end)
