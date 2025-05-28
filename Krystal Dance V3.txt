@@ -827,18 +827,23 @@ sound69:Play()
                                 end
 if mode == 2 then 
     if k == "q" then 
-           if dancing == false then 
+    if dancing == false then 
         stopanim()
         dancing = true
-        task.wait(.005)
+        task.wait(0.005)
         sound69.SoundId = customasset("Dances/Doodle.mp3")
         timeposcur = sound69.TimePosition 
-sound69:Play()
-        playanim(79367478209840)
+        sound69:Play()
+
+        local animation = Instance.new("Animation")
+        animation.AnimationId = "rbxassetid://79367478209840"
+        local animTrack = humanoid:LoadAnimation(animation)
+        animTrack:Play()
+        animTrack:AdjustSpeed(1.4)
     else
         stopanim()
         
-           end 
+              end 
     elseif k == "e" then
                      if dancing == false then 
         stopanim()
