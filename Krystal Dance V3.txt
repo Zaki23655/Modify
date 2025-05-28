@@ -831,10 +831,10 @@ if mode == 2 then
         stopanim()
         dancing = true
         task.wait(.005)
-        sound69.SoundId = customasset("Dances/XO.mp3")
+        sound69.SoundId = customasset("Dances/Doodle.mp3")
         timeposcur = sound69.TimePosition 
 sound69:Play()
-        playanim(73559770055600)
+        playanim(79367478209840)
     else
         stopanim()
         
