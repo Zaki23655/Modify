@@ -1306,7 +1306,6 @@ Humanoid.StateChanged:Connect(function(_, newState)
             jumping = false
             stopanim()
             playanim(0, 1, false, idleanim)  (landing)
-            playanim(0, 1, false, walkanim)  (landing)
         end
     end
 end)
