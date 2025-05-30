@@ -1289,7 +1289,6 @@ end)
 
 
 
--- Jump and Landing Animation Integration
 local JUMP_ANIM_ID = "125750702"
 local jumping = false
 
@@ -1301,12 +1300,13 @@ Humanoid.StateChanged:Connect(function(_, newState)
             playanim(JUMP_ANIM_ID, 1, false)
         end
     elseif newState == Enum.HumanoidStateType.Freefall then
-        -- Still in air, wait for landing
+        
     elseif newState == Enum.HumanoidStateType.Landed or newState == Enum.HumanoidStateType.Running then
         if jumping and not dancing then
             jumping = false
             stopanim()
-            playanim(0, 1, false, idleanim)  -- Play idle anim (landing)
+            playanim(0, 1, false, idleanim)  (landing)
+            playanim(0, 1, false, walkanim)  (landing)
         end
     end
 end)
