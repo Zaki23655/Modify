@@ -1286,3 +1286,22 @@ else
     idle = false 
 end
 end)
+local JUMP_ANIM_ID = "125750702"
+local jumping = false
+
+Humanoid.StateChanged:Connect(function(_, newState)
+    if newState == Enum.HumanoidStateType.Jumping then
+        if not jumping and not dancing then
+            jumping = true
+            stopanim()
+            playanim(JUMP_ANIM_ID, 1, false)
+        end
+    elseif newState == Enum.HumanoidStateType.Freefall then
+
+    elseif newState == Enum.HumanoidStateType.Landed or newState == Enum.HumanoidStateType.Running then
+        if jumping and not dancing then
+            jumping = false
+            stopanim()
+        end
+    end
+end)
