@@ -1292,7 +1292,6 @@ end)
 
 
 
--- Jump and Landing Animation Integration
 local JUMP_ANIM_ID = "18505754329"
 local FALL_ANIM_ID = "18505757737"
 local jumping = false
