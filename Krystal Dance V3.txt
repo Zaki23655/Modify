@@ -1302,34 +1302,3 @@ else
     idle = false 
 end
 end)
-
-
-
-
-
-
--- Jump and Landing Animation Integration
-local JUMP_ANIM_ID = "18505754329"
-local FALL_ANIM_ID = "18505757737"
-local jumping = false
-
-Humanoid.StateChanged:Connect(function(_, newState)
-    if newState == Enum.HumanoidStateType.Jumping then
-        if not jumping and not dancing then
-            jumping = true
-            stopanim()
-            playanim(JUMP_ANIM_ID, 1, false)
-        end
-    elseif newState == Enum.HumanoidStateType.Freefall then
-        if jumping and not dancing then
-            stopanim()
-            playanim(FALL_ANIM_ID, 1, false)
-        end
-    elseif newState == Enum.HumanoidStateType.Landed or newState == Enum.HumanoidStateType.Running then
-        if jumping and not dancing then
-            jumping = false
-            stopanim()
-            playanim(0, 1, false, idleanim)  -- Play idle animation after landing
-        end
-    end
-end)
