@@ -787,14 +787,15 @@ elseif k == "comma" then
         stopanim()
         dancing = true
         task.wait(.005)
-        sound69.SoundId = customasset("Dances/メズマライザー 初音ミク重音テトSV.mp3")
+        sound69.SoundId = customasset("Dances/Mesmerized.mp3")
         timeposcur = sound69.TimePosition 
 sound69:Play()
         playanim(107578737342278)
     else
         stopanim()
         
-    endelseif k == "leftbracket" then 
+    end
+elseif k == "leftbracket" then 
     if dancing == false then 
         stopanim()
         dancing = true
