@@ -1,3 +1,12 @@
+for _,v in next, DeadChar:GetChildren() do
+		if v:IsA("Accessory") then
+if v.Name == "PlainTail" then
+Tail = CloneChar[v.Name].Handle
+end
+			SCIFIMOVIELOL(v.Handle,CloneChar[v.Name].Handle,Vector3.new(0,0,0),Vector3.new(0,0,0))
+		end
+	end
+
 local Global = (getgenv and getgenv()) or shared
 Global.GelatekReanimateConfig = {
     -- [[ Rig Settings ]] --
