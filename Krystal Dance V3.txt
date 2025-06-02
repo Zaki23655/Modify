@@ -782,34 +782,7 @@ sound69:Play()
         stopanim()
         
     end
-
-                    elseif k == "comma" then 
-    if dancing == false then 
-        stopanim()
-        dancing = true
-        task.wait(.005)
-        sound69.SoundId = customasset("Dances/Mystery.mp3")
-        timeposcur = sound69.TimePosition 
-sound69:Play()
-        playanim(131401099812672)
-    else
-        stopanim()
-        
-    end
-elseif k == "leftbracket" then 
-    if dancing == false then 
-        stopanim()
-        dancing = true
-        task.wait(.005)
-        sound69.SoundId = customasset("Dances/true_heart.mp3")
-        timeposcur = sound69.TimePosition 
-sound69:Play()
-        playanim(131776726113292)
-    else
-        stopanim()
-        
-    end
-elseif k == "quote" then 
+elseif k == "comma" then 
     if dancing == false then 
         stopanim()
         dancing = true
@@ -818,6 +791,18 @@ elseif k == "quote" then
         timeposcur = sound69.TimePosition 
 sound69:Play()
         playanim(107578737342278)
+    else
+        stopanim()
+        
+    endelseif k == "leftbracket" then 
+    if dancing == false then 
+        stopanim()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/true_heart.mp3")
+        timeposcur = sound69.TimePosition 
+sound69:Play()
+        playanim(131776726113292)
     else
         stopanim()
         
