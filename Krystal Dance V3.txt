@@ -691,15 +691,13 @@ sound69:Play()
 elseif k == "l" then 
     if dancing == false then 
         stopanim()
-    dancing = true
-    task.wait(.005)
-        sound69.SoundId = customasset("Dances/griddy.mp3")
-        char.Humanoid.WalkSpeed = 4*char:GetScale()
+        dancing = true
+        task.wait(.005)
+        sound69.SoundId = customasset("Dances/DO THE FLOP.ogg")
         timeposcur = sound69.TimePosition 
 sound69:Play()
-        playanim(15704995372)
+        playanim(122878040721056)
     else
-        char.Humanoid.WalkSpeed = 14*char:GetScale()
         stopanim()
         
     end
