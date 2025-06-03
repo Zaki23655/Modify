@@ -818,7 +818,7 @@ if mode == 2 then
         sound69.SoundId = customasset("Dances/Doodle.mp3")
         timeposcur = sound69.TimePosition 
 sound69:Play()
-        playanim(90069083924245)
+        playanim(137721173051346)
     else
         stopanim()
         
