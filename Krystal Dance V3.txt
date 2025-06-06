@@ -4,7 +4,7 @@ Global.GelatekReanimateConfig = {
     ["AnimationsDisabled"] = false,
     ["R15ToR6"] = false,
     ["DontBreakHairWelds"] = true,
-    ["PermanentDeath"] = false,
+    ["PermanentDeath"] = true,
     ["Headless"] = false,
     ["TeleportBackWhenVoided"] = true,
     
