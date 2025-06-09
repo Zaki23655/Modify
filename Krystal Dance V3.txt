@@ -652,10 +652,10 @@ elseif k == "p" then
         stopanim()
 dancing = true
 task.wait(.005)
-        sound69.SoundId = customasset("Dances/pogo.mp3")
+        sound69.SoundId = customasset("Dances/DanceOfNight.mp3")
         timeposcur = sound69.TimePosition 
 sound69:Play()
-        playanim(8829798048,1.5)
+        playanim(13456829762)
     else
         stopanim()
         
