@@ -775,7 +775,7 @@ elseif k == "n" then
         sound69.SoundId = customasset("Dances/TUCA DONKA.mp3")
         timeposcur = sound69.TimePosition 
 sound69:Play()
-        playanim(102908990958263)
+        playanim(102908990958263,1.4)
     else
         stopanim()
         
@@ -1065,7 +1065,7 @@ elseif k == "c" then
         sound69.SoundId = customasset("Dances/gentle.mp3")
         timeposcur = sound69.TimePosition 
         sound69:Play()
-        playanim(14669670412)
+        playanim(14669670412,1.5)
     else
         stopanim()
 
