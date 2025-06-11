@@ -41,7 +41,7 @@ if not isfolder("Dances") then
     makefolder("Dances")
     end
 local is = game:GetService("InsertService")
-local idleanim = is:LoadLocalAsset("rbxassetid://136078657506707")
+local idleanim = is:LoadLocalAsset("rbxassetid://18297031150")
 local walkanim = is:LoadLocalAsset("rbxassetid://130213485744288")
 local randompart = Instance.new("Part",game:GetService("RunService"))
 local coolparticles = is:LoadLocalAsset("rbxassetid://87299663038091").ParticleAttachment
